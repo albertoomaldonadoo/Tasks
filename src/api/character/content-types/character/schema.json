@@ -56,6 +56,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "planet": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::planet.planet",
+      "inversedBy": "characters"
     }
   }
 }
